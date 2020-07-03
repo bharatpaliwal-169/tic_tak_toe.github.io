@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://kit.fontawesome.com/5ba01f7dd3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="x-icon">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="jumbotron bg-dark text-white">
+        <div class="container">
+            <div class="row row-header my-center">
+                <h1>Tic-Tac-Toe</h1>
+            </div>
+            <div class="row row-header my-center">
+                <p>"It's the new way to play old game"</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- main game -->
+
+    <div class="container">
+        <div class="row">
+            <div data-cell-index="0" class="col-4 cell"></div>
+            <div data-cell-index="1" class="col-4 cell"></div>
+            <div data-cell-index="2" class="col-4 cell"></div>
+        </div>
+        <div class="row">
+            <div data-cell-index="3" class="col-4 cell"></div>
+            <div data-cell-index="4" class="col-4 cell"></div>
+            <div data-cell-index="5" class="col-4 cell"></div>
+        </div>
+        <div class="row">
+            <div data-cell-index="6" class="col-4 cell"></div>
+            <div data-cell-index="7" class="col-4 cell"></div>
+            <div data-cell-index="8" class="col-4 cell"></div>
+        </div>
+    </div>
+
+    <!-- game status -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="game--status board">....</h2>
+            </div>
+            <div class="col-12">
+                <button class="game--reset btn-lg btn-block ">RESET</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container-fluid bg-dark text-white">
+            <div class="row">
+                <div class="col-6">
+                     <p> > Liked the game, press like button :)</p>
+                </div>
+                <div class="col-6 like">
+                    <button onclick="like();" id="liked" class="btn btn-block btn-primary"> Like </button> 
+                </div>
+                <div class="col-7">
+                  > <strong> Share</strong> this game with your family and friends
+                </div>
+                <div class="col-5">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//quizgamebybharat.netlify.app/"> <i class="fab fa-lg fa-facebook-f"></i> </a>
+                    <a href="https://twitter.com/intent/tweet?text=https%3A//quizgamebybharat.netlify.app/"> <i class="fab fa-lg fa-twitter"></i> </a>
+                    <!-- <a href="#"> <i class="fab fa-instagram"></i> </a> -->
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//quizgamebybharat.netlify.app/&title=quizGamebyBharat&summary=This%20is%20a%20simple%20quiz%20made%20by%20me%20using%20very%20basic%20JS,Bootstrap%20and%20HTML.&source=https%3A//bharatpaliwal-169.github.io/quizGamebyBharat.github.io/">
+                       <i class="fab fa-lg fa-linkedin-in"></i> </a>
+                </div>
+                <div class="col-12">
+                    
+                        <p> > Your feedback is most welcome.</p>  
+                        <p> > You can get your own customized game.</p> 
+                        <p> > Connect with me for more such content.</p>
+                    
+                </div>
+                <div class="col-12">
+                    <a class="btn btn-social-icon btn-facebook btn-outline-primary" href="https://www.facebook.com/bharat.paliwal.3958914" target="_blank"><i class="fab fa-lg fa-facebook-f"></i></a> 
+                    <a class="btn btn-social-icon btn-linkedin btn-outline-primary" href="https://www.linkedin.com/in/bharat-paliwal-ab7169179/" target="_blank"><i class="fab fa-lg fa-twitter"></i></a> 
+                    <a class="btn btn-social-icon btn-twitter btn-outline-primary" href="https://twitter.com/BharatP58380618" target="_blank"><i class="fab fa-lg fa-linkedin-in"></i></a> 
+                    <a class="btn btn-social-icon btn-instagram btn-outline-primary" href="https://www.instagram.com/_bharat_231/" target="_blank"><i class="fab fa-lg fa-instagram"></i></a>  
+                </div>
+                <div class="col-12 my-center">
+                    <h6> &copy;Bharat Paliwal</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
